@@ -40,7 +40,7 @@
     "sinon": "^9.0.2"
   },
   "scripts": {
-    "start": "cross-env PORT=4000 react-app-rewired start",
+    "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "test:coverage": "cross-env CI=TRUE react-app-rewired test --coverage",

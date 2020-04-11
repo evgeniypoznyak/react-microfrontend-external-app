@@ -60,12 +60,6 @@
     }
   },
   "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx,ts,tsx}",
-      "!<rootDir>/node_modules/",
-      "!<rootDir>/src/serviceWorker.js",
-      "!<rootDir>/src/setupProxy.js"
-    ],
     "coverageThreshold": {
       "global": {
         "statements": 85,

@@ -5,18 +5,19 @@ import App from 'hoc/App/App';
 import * as serviceWorker from './serviceWorker';
 import Home from './components/Home/Home';
 
-const AppWrapper = () => {
- return(
+export const AppWrapper = () => {
+  return (
     <App>
-      <Home/>
-    </App>)
+      <Home />
+    </App>
+  );
 };
 const APP_NAME = process.env.REACT_APP_NAME;
 const render = `render${APP_NAME}`;
 const unmount = `unmount${APP_NAME}`;
 
 // render MF
-window[render] = (containerId) => {
+window[render] = containerId => {
   ReactDOM.render(
     <React.StrictMode>
       <AppWrapper />
@@ -27,14 +28,13 @@ window[render] = (containerId) => {
 };
 
 // unmount MF
-
 window[unmount] = containerId => {
   ReactDOM.unmountComponentAtNode(document.getElementById(containerId));
 };
 
 // if not a MF
 if (!document.getElementById(`${APP_NAME}-container`)) {
-  ReactDOM.render( <React.StrictMode><AppWrapper /></React.StrictMode>, document.getElementById('root'))
+  window[render]('root');
 }
 
 // If you want your app to work offline and load faster, you can change

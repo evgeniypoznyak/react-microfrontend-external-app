@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home/> renders correctly 1`] = `
+<div>
+  <div>
+    Hi! I'm a external component from another server!
+  </div>
+</div>
+`;

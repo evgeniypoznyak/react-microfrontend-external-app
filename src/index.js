@@ -32,6 +32,7 @@ window[unmount] = containerId => {
   ReactDOM.unmountComponentAtNode(document.getElementById(containerId));
 };
 
+/* istanbul ignore next */
 // if not a MF
 if (!document.getElementById(`${APP_NAME}-container`)) {
   window[render]('root');

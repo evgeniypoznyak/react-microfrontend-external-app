@@ -68,8 +68,7 @@
       "src/**/*.{js,jsx,ts,tsx}",
       "!<rootDir>/node_modules/",
       "!<rootDir>/src/serviceWorker.js",
-      "!<rootDir>/src/setupProxy.js",
-      "!<rootDir>/src/index.js"
+      "!<rootDir>/src/setupProxy.js"
     ],
     "coverageThreshold": {
       "global": {
